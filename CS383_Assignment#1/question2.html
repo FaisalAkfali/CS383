@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS383 - Assignment 1 - Question 2</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="q2-page bg-light">
+
+  <div class="container my-5">
+    <div class="form-shell bg-white p-4 p-md-5">
+      <h2 class="mb-4 text-center">Student Registration Form</h2>
+
+      <form>
+        <div class="row mb-3 align-items-center">
+          <label for="firstName" class="col-sm-3 col-form-label">First Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label for="lastName" class="col-sm-3 col-form-label">Last Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label class="col-sm-3 col-form-label">Date Of Birth</label>
+          <div class="col-sm-9 d-flex gap-2 flex-wrap">
+            <select class="form-select w-auto">
+              <option>Day</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <select class="form-select w-auto">
+              <option>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+            </select>
+            <select class="form-select w-auto">
+              <option>Year</option>
+              <option>2026</option>
+              <option>2025</option>
+              <option>2024</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label for="email" class="col-sm-3 col-form-label">Email Id</label>
+          <div class="col-sm-9">
+            <input type="email" class="form-control" id="email" placeholder="Email Id">
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label class="col-sm-3 col-form-label">Gender</label>
+          <div class="col-sm-9">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="male">
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="female">
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="address" class="col-sm-3 col-form-label">Address</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" id="address" rows="4" placeholder="Address"></textarea>
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label for="pinCode" class="col-sm-3 col-form-label">Pin Code</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="pinCode" placeholder="Pin code">
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label for="state" class="col-sm-3 col-form-label">State</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="state" placeholder="State">
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label for="city" class="col-sm-3 col-form-label">City</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="city" placeholder="City">
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label for="country" class="col-sm-3 col-form-label">Country</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="country" placeholder="Country">
+          </div>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <label class="col-sm-3 col-form-label">Hobbies</label>
+          <div class="col-sm-9">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="drawing">
+              <label class="form-check-label" for="drawing">Drawing</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="singing">
+              <label class="form-check-label" for="singing">Singing</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="dancing">
+              <label class="form-check-label" for="dancing">Dancing</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="sketching">
+              <label class="form-check-label" for="sketching">Sketching</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-sm-3 col-form-label">Qualification</label>
+          <div class="col-sm-9">
+            <div class="table-responsive">
+              <table class="table table-bordered align-middle qualification-table mb-0">
+                <thead class="table-warning">
+                  <tr>
+                    <th>S.No</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year Of Passing</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Examination"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Board"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Percentage"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Year Of Passing"></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Examination"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Board"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Percentage"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Year Of Passing"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Examination"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Board"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Percentage"></td>
+                    <td><input type="text" class="form-control form-control-sm" placeholder="Year Of Passing"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4 align-items-center">
+          <label class="col-sm-3 col-form-label">Courses</label>
+          <div class="col-sm-9">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="course" id="bca">
+              <label class="form-check-label" for="bca">BCA</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="course" id="mca">
+              <label class="form-check-label" for="mca">MCA</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-warning fw-semibold px-4">Send Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

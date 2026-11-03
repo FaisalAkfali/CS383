@@ -1,0 +1,113 @@
+/* q1 */
+body.q1-page .bg-primary {
+  background-color: #b32dd6 !important;
+}
+
+body.q1-page .bg-secondary {
+  background-color: #d97a2b !important;
+}
+
+body.q1-page .bg-success {
+  background-color: #20b7d3 !important;
+}
+
+body.q1-page .bg-info {
+  background-color: #9bd32e !important;
+}
+
+body.q1-page .bg-warning {
+  background-color: #f1b52b !important;
+}
+
+body.q1-page .bg-danger {
+  background-color: #e2692b !important;
+}
+
+body.q1-page .bg-light {
+  background-color: #f6e6db !important;
+}
+
+body.q1-page .bg-dark {
+  background-color: #5a2d1b !important;
+}
+
+body.q1-page .color-box {
+  width: 110px;
+  height: 30px;
+  display: inline-block;
+}
+
+body.q1-page .m-1 { margin: 0.5rem !important; }
+body.q1-page .m-2 { margin: 1rem !important; }
+body.q1-page .m-3 { margin: 1.5rem !important; }
+body.q1-page .m-4 { margin: 2rem !important; }
+body.q1-page .m-5 { margin: 4rem !important; }
+
+body.q1-page .p-1 { padding: 0.5rem !important; }
+body.q1-page .p-2 { padding: 1rem !important; }
+body.q1-page .p-3 { padding: 1.5rem !important; }
+body.q1-page .p-4 { padding: 2rem !important; }
+body.q1-page .p-5 { padding: 4rem !important; }
+
+/* q2 */
+body.q2-page .form-shell {
+  border: 4px solid #f2b705;
+  border-radius: 0.5rem;
+}
+
+body.q2-page .form-label {
+  font-weight: 600;
+}
+
+body.q2-page .qualification-table input {
+  min-width: 90px;
+}
+
+/* q3 */
+html {
+  scroll-behavior: smooth;
+}
+
+body.q3-page .hero-slide {
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+}
+
+body.q3-page .hero-slide-1 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://picsum.photos/seed/hero1/1600/600');
+}
+
+body.q3-page .hero-slide-2 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://picsum.photos/seed/hero2/1600/600');
+}
+
+body.q3-page .hero-slide-3 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://picsum.photos/seed/hero3/1600/600');
+}
+
+body.q3-page .circle-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+body.q3-page .gallery-img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+body.q3-page .map-frame {
+  border: 0;
+}
+
+body.q3-page footer {
+  background-color: #5a2d1b;
+}
